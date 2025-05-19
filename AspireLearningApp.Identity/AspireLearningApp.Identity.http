@@ -1,0 +1,6 @@
+@AspireLearningApp.Identity_HostAddress = http://localhost:5280
+
+GET {{AspireLearningApp.Identity_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

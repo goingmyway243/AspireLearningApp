@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.0.0" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>01cf579f-7c38-4d97-84b9-e4751c339e85</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AspireLearningApp.Identity\AspireLearningApp.Identity.csproj" />
+    <ProjectReference Include="..\AspireLearningApp.OrderService\AspireLearningApp.OrderService.csproj" />
+    <ProjectReference Include="..\AspireLearningApp.UserService\AspireLearningApp.UserService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.0.0" />
+	<PackageReference Include="Aspire.Hosting.SqlServer" Version="9.0.0" />
+	<PackageReference Include="Aspire.Hosting.Redis" Version="9.0.0" />
+  </ItemGroup>
+
+</Project>
