@@ -12,7 +12,7 @@ namespace AspireLearningApp.Identity.Data
         {
         }
 
-        protected override void OnModelCreating(ModelBuilder builder)
+        /*protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
             
@@ -23,6 +23,6 @@ namespace AspireLearningApp.Identity.Data
             builder.Entity<IdentityUserLogin<Guid>>().ToTable("UserLogins");
             builder.Entity<IdentityRoleClaim<Guid>>().ToTable("RoleClaims");
             builder.Entity<IdentityUserToken<Guid>>().ToTable("UserTokens");
-        }
+        }*/
     }
 }
